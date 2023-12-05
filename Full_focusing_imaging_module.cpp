@@ -25,7 +25,7 @@ int main()
     double array_element_width = 0.5; //mm  探头阵元的宽度
     double array_element_distance = 0.6; //mm 探头阵元的距离
     double mesh_length = 8; //mm 网格的长度  确定依据是 【32*0.5+31*0.6】/3
-    double sampling_time = 0.00005; //ms 采样时间 = 总采样点数/采样频率
+    double sampling_time = 0.00001; //s 采样时间 = 总采样点数/采样频率  计算有误
 
 
     static double datas[32][32][1000] = {0}; //模拟接收探头传来的32*32*1000的幅值信号数据
